@@ -1,0 +1,168 @@
+/* GERAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body{
+    background-color: #000;
+    
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 130px;
+    align-items: center;
+}
+
+header h2 {
+    width: 100px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    list-style: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+header a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: #AD17DA;
+}
+
+.different {
+    border: 1px solid #AD17DA;
+    padding: 6px 20px;
+    border-radius: 10px;
+}
+
+.different:hover {
+    background-color: #AD17DA;
+    color: #fff;
+}
+
+/* MAIN */
+main{
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.text-content h1 {
+    font-size: 55px;
+    line-height: 60px;
+    color: #AD17DA;
+    margin-bottom: 25px;
+}
+
+.text-content p {
+    font-size: 15px;
+    width: 500px;
+    margin-bottom: 25px;
+}
+
+/* FORM */
+input {
+    display: block;
+    width: 80%;
+    padding: 12px 10px;
+    border-radius: 15px;
+}
+
+.name {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #AD17DA;
+    margin-top: 25px;
+    width: 30%;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* IMAGEM PRINCIPAL */
+.img-content img {
+    margin-right: 50px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+    .img-content {
+        display: none;
+    }
+
+    main {
+        max-width: 750px;
+    }
+
+    .content-container {
+        margin: 0 auto;
+    }
+
+    .text-content h1 {
+        width: 600px;
+    }
+}
+
+@media (max-width: 450px) {
+    header {
+        flex-direction: column;
+        margin-top: 20px;
+        height: auto;
+    
+    }
+
+    header ul {
+        justify-content: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    header li {
+        margin: 10px 15px;
+    }
+    
+    main{
+        max-width: 420px;
+        margin: 30px auto;
+    } 
+
+    .content-container {
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .text-content h1 {
+        width: 400px;
+    }
+
+    .text-content p {
+        width: 90%;
+    }
+}
